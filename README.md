@@ -1,6 +1,14 @@
 # emp-tool
 <img src="https://raw.githubusercontent.com/emp-toolkit/emp-readme/master/art/logo-full.jpg" width=300px/>
 
+## Express Installation
+
+1. Go the the folder you want to install everything
+
+2. `git clone https://github.com/emp-toolkit/emp-readme.git`
+
+2. `bash emp-readme/scripts/setup_new_machine.sh`
+
 ## Prerequisites Installation
 
 1. Install related packages including `cmake git build-essential libssl-dev libgmp-dev`, or use this [script](https://github.com/emp-toolkit/emp-readme/blob/master/scripts/install_packages.sh).
