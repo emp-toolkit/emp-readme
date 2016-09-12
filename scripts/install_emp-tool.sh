@@ -3,3 +3,4 @@ cd emp-tool
 cmake .
 make
 sudo make install
+cd ..
