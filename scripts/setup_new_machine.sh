@@ -1,5 +1,7 @@
-bash install_packages.sh
-bash install_relic.sh
-bash install_emp-tool.sh
-bash install_emp-ot.sh
-bash install_emp-m2pc.sh
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+bash $DIR/install_packages.sh
+bash $DIR/install_relic.sh
+bash $DIR/install_emp-tool.sh
+bash $DIR/install_emp-ot.sh
+bash $DIR/install_emp-m2pc.sh
+bash $DIR/install_emp-sh2pc.sh
