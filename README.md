@@ -17,3 +17,11 @@
 Note that preset options for relic is for efficient ECC operations.
 
 3. Install tools. Instruction can be found in the repo, or can be found [here](https://github.com/emp-toolkit/emp-readme/tree/master/scripts)
+
+## Citation
+
+    @misc{emp-toolkit,
+      author = {Xiao Wang, Alex J. Malozemoff, Jonathan Katz},
+      title = {{EMP-toolkit: Efficient MultiParty computation toolkit}},
+      howpublished = {\url{https://github.com/emp-toolkit}},
+    }
