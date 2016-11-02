@@ -18,6 +18,10 @@ Note that preset options for relic is for efficient ECC operations.
 
 3. Install tools. Instruction can be found in the repo, or can be found [here](https://github.com/emp-toolkit/emp-readme/tree/master/scripts)
 
+## Documentation (under development)
+
+https://emp-toolkit.github.io/emp-doc/
+
 ## Citation
 
     @misc{emp-toolkit,
