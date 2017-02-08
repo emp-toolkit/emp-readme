@@ -25,7 +25,7 @@ https://emp-toolkit.github.io/emp-doc/
 ## Citation
 
     @misc{emp-toolkit,
-      author = {Xiao Wang, Alex J. Malozemoff, Jonathan Katz},
+      author = {Xiao Wang and Alex J. Malozemoff and Jonathan Katz},
       title = {{EMP-toolkit: Efficient MultiParty computation toolkit}},
       howpublished = {\url{https://github.com/emp-toolkit}},
     }
