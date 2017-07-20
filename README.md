@@ -23,9 +23,11 @@ Note that preset options for relic is for efficient ECC operations.
 https://emp-toolkit.github.io/emp-doc/
 
 ## Citation
-
+```latex
     @misc{emp-toolkit,
       author = {Xiao Wang and Alex J. Malozemoff and Jonathan Katz},
       title = {{EMP-toolkit: Efficient MultiParty computation toolkit}},
       howpublished = {\url{https://github.com/emp-toolkit}},
+      year={2016}
     }
+```
