@@ -1,3 +1,4 @@
+git clone https://github.com/emp-toolkit/emp-readme.git
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 bash $DIR/install_packages.sh
 bash $DIR/install_relic.sh
