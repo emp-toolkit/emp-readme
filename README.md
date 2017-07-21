@@ -5,9 +5,7 @@
 
 1. Go the the folder you want to install everything
 
-2. `git clone https://github.com/emp-toolkit/emp-readme.git`
-
-2. `bash emp-readme/scripts/setup_new_machine.sh`
+2. `curl -s https://raw.githubusercontent.com/emp-toolkit/emp-readme/master/scripts/setup_new_machine.sh | bash`
 
 ## Detailed Installation
 
