@@ -5,7 +5,7 @@
 
 1. Go the the folder you want to install everything
 
-2. `curl -s https://raw.githubusercontent.com/emp-toolkit/emp-readme/master/scripts/setup_new_machine.sh | bash`
+2. `wget https://goo.gl/wmt4KB -O install.sh && bash install.sh`
 
 ## Detailed Installation
 
