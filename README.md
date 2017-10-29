@@ -20,7 +20,7 @@ Note that preset options for relic is for efficient ECC operations.
 
 1. Use Homebrew to install OpenSSL first. `brew install openssl`.
 
-2. Specify `OPENSSL_ROOT_DIR` before installation, e.g., `export OPENSSL_ROOT_DIR=/usr/local/opt/openssl`. The root path can be found by `brew info openssl`.
+2. Add the pkgconfig file of OpenSSL to `PKG_CONFIG_PATH`, e.g., `export PKG_CONFIG_PATH=${PKG_CONFIG_PATH}:/usr/local/opt/openssl/lib/pkgconfig`. The pkg-config path can be found by `brew info openssl`.
 
 ## Documentation (under development)
 
