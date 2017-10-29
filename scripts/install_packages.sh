@@ -2,6 +2,7 @@ if [ "$(uname)" == "Darwin" ]; then
 	brew update
 	brew list openssl || brew install openssl
 	brew list xctool || brew install xctool
+	brew list pkg-config || brew install pkg-config
 	brew list cmake || brew install cmake
 	brew list gmp || brew install gmp
 	brew list boost || brew install boost
