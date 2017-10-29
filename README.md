@@ -16,6 +16,12 @@ Note that preset options for relic is for efficient ECC operations.
 
 3. Install tools. Instruction can be found in the repo, or can be found [here](https://github.com/emp-toolkit/emp-readme/tree/master/scripts)
 
+## Note for Mac Developers
+
+1. Use Homebrew to install OpenSSL first. `brew install openssl`.
+
+2. Specify `OPENSSL_ROOT_DIR` before installation, e.g., `export OPENSSL_ROOT_DIR=/usr/local/opt/openssl`. The root path can be found by `brew info openssl`.
+
 ## Documentation (under development)
 
 https://emp-toolkit.github.io/emp-doc/
