@@ -11,5 +11,5 @@ else
 	sudo add-apt-repository -y ppa:george-edison55/cmake-3.x
 	sudo add-apt-repository -y ppa:kzemek/boost
 	sudo apt-get update
-	sudo apt-get install -y cmake git build-essential libssl-dev libgmp-dev python libboost1.58-all-dev
+	sudo apt-get install -y cmake git build-essential libssl-dev libgmp-dev python libboost1.58-dev
 fi
