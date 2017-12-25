@@ -9,6 +9,7 @@ if [ "$(uname)" == "Darwin" ]; then
 else
 	sudo apt-get install -y software-properties-common
 	sudo add-apt-repository -y ppa:george-edison55/cmake-3.x
+	#sudo add-apt-repository -y ppa:boost-latest/ppa
 	sudo apt-get update
-	sudo apt-get install -y cmake git build-essential libssl-dev libgmp-dev python libboost-all-dev
+	sudo apt-get install -y cmake git build-essential libssl-dev libgmp-dev python libboost1.58-all-dev
 fi
