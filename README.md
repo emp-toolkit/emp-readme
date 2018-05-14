@@ -9,7 +9,7 @@
 
 ## Detailed Installation
 
-1. Install related packages including `cmake git build-essential libssl-dev libgmp-dev` (for Linux), or `openssl xctool pkg-config cmake gmp boost` (for Mac), or use this [script](https://github.com/emp-toolkit/emp-readme/blob/master/scripts/install_packages.sh).
+1. Install related packages including `cmake git build-essential libssl-dev libgmp-dev` (for Linux), or `openssl xctool pkg-config cmake gmp boost` (for Mac). For ubuntu and Mac users, a [script](https://github.com/emp-toolkit/emp-readme/blob/master/scripts/install_packages.sh) is provided.
 
 2. Install [relic-toolkit](https://github.com/relic-toolkit/relic), or use this [script](https://github.com/emp-toolkit/emp-readme/blob/master/scripts/install_relic.sh).
 Note that preset options for relic is for efficient ECC operations.
