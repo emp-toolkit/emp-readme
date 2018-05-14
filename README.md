@@ -37,3 +37,12 @@ https://emp-toolkit.github.io/emp-doc/
 ```
 ## Acknowledgement
 This work was supported in part by the National Science Foundation under Awards #1111599 and #1563722.
+
+The authors would like to thank everyone who contributed to this project, including but not limited to 
+- [Fabrice Benhamouda](http://www.normalesup.org/~fbenhamo/), 
+- [Weikeng Chen](https://www.chenweikeng.com/), 
+- [Shai Halevi](https://shaih.github.io/), 
+- [Ivan Oliveira Nunes](https://sites.google.com/site/ivandeoliveiranunes/), 
+- [David Cerezo Sánchez](http://cerezo.name/blog/about/), 
+- [Ruiyu Zhu](https://github.com/RuiyuZhu), 
+- and others.
