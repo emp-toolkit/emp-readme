@@ -8,8 +8,8 @@ if [ "$(uname)" == "Darwin" ]; then
 	brew list boost || brew install boost
 else
 	CC=`lsb_release -rs | cut -c 1-2`
-	VER= expr $CC + 0
-	if [[ $VER -gt 13 ]]; then
+	VER=`expr $CC + 0`
+	if [[ $VER -gt 15 ]]; then
 		sudo apt-get install -y software-properties-common
 		sudo apt-get update
 		sudo apt-get install -y cmake git build-essential libssl-dev libgmp-dev python 
