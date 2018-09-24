@@ -42,6 +42,8 @@ The authors would like to thank everyone who contributed to this project, includ
 - [Fabrice Benhamouda](http://www.normalesup.org/~fbenhamo/), 
 - [Weikeng Chen](https://www.chenweikeng.com/), 
 - [Shai Halevi](https://shaih.github.io/), 
+- [Zhicong Huang](https://acs6610987.github.io/), 
+- [Wen-jie Lu](http://fionser.github.io/), 
 - [Ivan Oliveira Nunes](https://sites.google.com/site/ivandeoliveiranunes/), 
 - [David Cerezo Sánchez](http://cerezo.name/blog/about/), 
 - [Ruiyu Zhu](https://github.com/RuiyuZhu), 
