@@ -54,4 +54,4 @@ The authors would like to thank everyone who contributed to this project, includ
 
 
 ## Question
-Please send emails to wangxiao1254@gmail.com
+Please send emails to wangxiao@cs.northwestern.edu
