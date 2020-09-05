@@ -1,4 +1,4 @@
-git clone -brelease-2 https://github.com/emp-toolkit/emp-tool.git
+git clone https://github.com/emp-toolkit/emp-tool.git
 cd emp-tool
 cmake .
 make
