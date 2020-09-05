@@ -1,6 +1,9 @@
 # emp-tool
 <img src="https://raw.githubusercontent.com/emp-toolkit/emp-readme/master/art/logo-full.jpg" width=300px/>
 
+# History Version
+This branch will only accept bug fix, new features are being added only to v0.2 branch.
+
 ## Express Installation
 
 1. Go the the folder you want to install everything
