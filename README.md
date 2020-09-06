@@ -9,9 +9,9 @@
 
 ## Detailed Installation
 
-1. Install related packages including `cmake git build-essential libssl-dev` (for Linux), or `openssl xctool pkg-config cmake` (for Mac). For ubuntu and Mac users, a [script](https://github.com/emp-toolkit/emp-readme/blob/master/scripts/install_packages.sh) is provided.
+1. Install related packages including `cmake build-essential libssl-dev` (for Linux), or `openssl xctool pkg-config cmake` (for Mac). For ubuntu and Mac users, a [script](https://github.com/emp-toolkit/emp-readme/blob/master/scripts/install_packages.sh) is provided.
 
-2. Install tools. Instruction can be found in the repo, or can be found [here](https://github.com/emp-toolkit/emp-readme/tree/master/scripts)
+2. Install EMP tools. Instruction can be found in the repo, or can be found [here](https://github.com/emp-toolkit/emp-readme/tree/master/scripts)
 
 ## Citation
 ```latex
