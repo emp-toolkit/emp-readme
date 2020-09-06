@@ -32,7 +32,7 @@ parser.add_argument('-ag2pc', '--ag2pc', action='store_true')
 parser.add_argument('-agmpc', '--agmpc', action='store_true')
 args = parser.parse_args()
 
-for k in ['install', 'tool', 'ot', 'sh2pc', 'ag2pc', 'agmpc']
+for k in ['install', 'tool', 'ot', 'sh2pc', 'ag2pc', 'agmpc']:
 	if vars(args)[k]:
 		if k == "install":
 			os.system(install_packages)
