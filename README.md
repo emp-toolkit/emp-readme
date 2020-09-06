@@ -1,17 +1,13 @@
 # emp-tool
 <img src="https://raw.githubusercontent.com/emp-toolkit/emp-readme/master/art/logo-full.jpg" width=300px/>
 
-## Express Installation
+## Installation
 
 1. Go the the folder you want to install everything
 
-2. `wget https://goo.gl/wmt4KB -O install.sh && bash install.sh`
+2. `wget https://raw.githubusercontent.com/emp-toolkit/emp-readme/master/scripts/install.py`
 
-## Detailed Installation
-
-1. Install related packages including `cmake build-essential libssl-dev` (for Linux), or `openssl xctool pkg-config cmake` (for Mac). For ubuntu and Mac users, a [script](https://github.com/emp-toolkit/emp-readme/blob/master/scripts/install_packages.sh) is provided.
-
-2. Install EMP tools. Instruction can be found in the repo, or can be found [here](https://github.com/emp-toolkit/emp-readme/tree/master/scripts)
+3. `python install.py -install -tool -ot` to install code dependency, emp-tool and emp-ot. More flags can be added including `-sh2pc`, `-ag2pc`, `-agmpc`.
 
 ## Citation
 ```latex
