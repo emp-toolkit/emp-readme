@@ -11,7 +11,7 @@ def find_dev():
         if i != "lo":
             res = i
     if len(l) > 2:
-        print "More than two candidates!"
+        print("More than two candidates!")
     return res
 remove_throttle = '''
 sudo tc qdisc del dev DEV root
@@ -34,19 +34,19 @@ if args.i == "auto":
     DEV = find_dev()
 else:
     DEV = args.i
-print vars(args)
+print(vars(args))
 if vars(args)['delete']:
     subprocess.call(["bash", "-c", remove_throttle.replace("DEV", DEV)])
 else:
     if vars(args)['b']!=None and vars(args)['l'] != None :
         cmd = add_throttle.replace("DEV", DEV).replace("BANDWIDTH", str(vars(args)['b']))\
                                                    .replace("DELAY", str(vars(args)['l']))
-        print cmd
+        print(cmd)
         subprocess.call(["bash", "-c", cmd])
     elif vars(args)['b']!=None and vars(args)['l'] == None :
         cmd = add_throttle.replace("DEV", DEV).replace("BANDWIDTH", str(vars(args)['b']))\
                                                    .replace("DELAY", "0")
-        print cmd
+        print(cmd)
         subprocess.call(["bash", "-c", cmd])
     else:
         print("error!")
