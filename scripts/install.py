@@ -1,5 +1,5 @@
 #!/usr/python
-import os
+import subprocess
 install_packages = '''
 if [ "$(uname)" == "Darwin" ]; then
 	brew update
@@ -36,12 +36,12 @@ args = parser.parse_args()
 for k in ['install', 'tool', 'ot', 'sh2pc', 'ag2pc', 'agmpc']:
 	if vars(args)[k]:
 		if k == "install":
-			os.system(install_packages)
+                        subprocess.call(["bash", "-c", install_packages])
 		#	print install_packages
 		else:
 			template = install_template.replace("X", "emp-"+k)
 			if vars(args)['enable_float']:
 				template = template.replace("False", "True")
 			#os.system(template)
-			print template
+			subprocess.call(["bash", "-c", template])
 		#	print install_template.replace("X", "emp-"+k)
