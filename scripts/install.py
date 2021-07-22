@@ -17,7 +17,7 @@ fi
 install_template = '''
 git clone https://github.com/emp-toolkit/X.git
 cd X
-cmake -DENABLE_FLOAT=False .
+cmake .
 make -j4
 sudo make install
 cd ..
@@ -27,21 +27,19 @@ parser = argparse.ArgumentParser()
 parser.add_argument('-install', '--install', action='store_true')
 parser.add_argument('-tool', '--tool', action='store_true')
 parser.add_argument('-ot', '--ot', action='store_true')
+parser.add_argument('-zk', '--zk', action='store_true')
 parser.add_argument('-sh2pc', '--sh2pc', action='store_true')
 parser.add_argument('-ag2pc', '--ag2pc', action='store_true')
 parser.add_argument('-agmpc', '--agmpc', action='store_true')
-parser.add_argument('-enable_float', '--enable_float', action='store_true')
 args = parser.parse_args()
 
-for k in ['install', 'tool', 'ot', 'sh2pc', 'ag2pc', 'agmpc']:
+for k in ['install', 'tool', 'ot', 'zk', 'sh2pc', 'ag2pc', 'agmpc']:
 	if vars(args)[k]:
 		if k == "install":
                         subprocess.call(["bash", "-c", install_packages])
 		#	print install_packages
 		else:
 			template = install_template.replace("X", "emp-"+k)
-			if vars(args)['enable_float']:
-				template = template.replace("False", "True")
 			#os.system(template)
 			subprocess.call(["bash", "-c", template])
 		#	print install_template.replace("X", "emp-"+k)
