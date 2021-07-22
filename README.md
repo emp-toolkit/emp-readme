@@ -7,7 +7,7 @@
 
 2. `wget https://raw.githubusercontent.com/emp-toolkit/emp-readme/master/scripts/install.py`
 
-3. `python install.py -install -tool -ot` to install code dependency, emp-tool and emp-ot. More flags can be added including `-sh2pc`, `-ag2pc`, `-agmpc`.
+3. `python install.py -install -tool -ot` to install code dependency, emp-tool and emp-ot. More flags can be added including `-sh2pc`, `-ag2pc`, `-agmpc`, `-zk`.
 
 ## Citation
 ```latex
