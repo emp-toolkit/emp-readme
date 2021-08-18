@@ -17,10 +17,12 @@ fi
 install_template = '''
 git clone https://github.com/emp-toolkit/X.git --branch Y
 cd X
+cmake .
 make -j4
 sudo make install
 cd ..
 '''
+
 import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('-install', '--install', action='store_true')
