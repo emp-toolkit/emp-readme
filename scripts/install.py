@@ -15,9 +15,8 @@ fi
 '''
 
 install_template = '''
-git clone https://github.com/emp-toolkit/X.git
+git clone https://github.com/emp-toolkit/X.git --branch Y
 cd X
-cmake -DENABLE_FLOAT=False .
 make -j4
 sudo make install
 cd ..
@@ -25,23 +24,20 @@ cd ..
 import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('-install', '--install', action='store_true')
-parser.add_argument('-tool', '--tool', action='store_true')
-parser.add_argument('-ot', '--ot', action='store_true')
-parser.add_argument('-sh2pc', '--sh2pc', action='store_true')
-parser.add_argument('-ag2pc', '--ag2pc', action='store_true')
-parser.add_argument('-agmpc', '--agmpc', action='store_true')
-parser.add_argument('-enable_float', '--enable_float', action='store_true')
+parser.add_argument('-deps', '--deps', action='store_true')
+parser.add_argument('--tool', nargs='?', const='master')
+parser.add_argument('--ot', nargs='?', const='master')
+parser.add_argument('--sh2pc', nargs='?', const='master')
+parser.add_argument('--ag2pc', nargs='?', const='master')
+parser.add_argument('--agmpc', nargs='?', const='master')
+parser.add_argument('--zk', nargs='?', const='master')
 args = parser.parse_args()
 
-for k in ['install', 'tool', 'ot', 'sh2pc', 'ag2pc', 'agmpc']:
+if vars(args)['install'] or vars(args)['deps']:
+	subprocess.call(["bash", "-c", install_packages])
+
+for k in ['tool', 'ot', 'zk', 'sh2pc', 'ag2pc', 'agmpc']:
 	if vars(args)[k]:
-		if k == "install":
-                        subprocess.call(["bash", "-c", install_packages])
-		#	print install_packages
-		else:
-			template = install_template.replace("X", "emp-"+k)
-			if vars(args)['enable_float']:
-				template = template.replace("False", "True")
-			#os.system(template)
-			subprocess.call(["bash", "-c", template])
-		#	print install_template.replace("X", "emp-"+k)
+		template = install_template.replace("X", "emp-"+k).replace("Y", vars(args)[k])
+		print(template)
+		subprocess.call(["bash", "-c", template])
