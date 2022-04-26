@@ -5,7 +5,7 @@
 
 1. Go the the folder you want to install everything
 
-2. `wget https://raw.githubusercontent.com/emp-toolkit/emp-readme/master/scripts/install.py`
+2. `curl https://raw.githubusercontent.com/emp-toolkit/emp-readme/master/scripts/install.py -O`
 
 3. `python install.py --deps --tool --ot` to install code dependency, and master branch of emp-tool and emp-ot. More flags can be added including `--sh2pc`, `--ag2pc`, `--agmpc`, `--zk`.
 - You can also install a branch using `python install.py --[repo1]=[branch1] --[repo2]=[branch2]`, e.g., `python install.py --deps --tool=0.2.1 --ot=master`
