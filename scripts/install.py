@@ -2,10 +2,7 @@
 import subprocess
 install_packages = '''
 if [ "$(uname)" == "Darwin" ]; then
-	brew update
-	brew install openssl
-	brew install pkg-config
-	brew install cmake
+
 else
     if command -v apt-get >/dev/null; then
         sudo apt-get install -y software-properties-common
