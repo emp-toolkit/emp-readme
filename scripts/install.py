@@ -4,7 +4,7 @@ install_packages = '''
 if [ "$(uname)" == "Darwin" ]; then
 	brew update
 	brew list openssl || brew install openssl
-	brew list xctool || brew install xctool
+	#brew list xctool || brew install xctool
 	brew list pkg-config || brew install pkg-config
 	brew list cmake || brew install cmake
 else
