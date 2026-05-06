@@ -19,8 +19,15 @@ fi
 '''
 
 install_template = '''
-git clone https://github.com/emp-toolkit/X.git --branch Y
-cd X
+set -e
+if [ -d X ]; then
+    cd X
+    git fetch origin
+    git checkout Y
+else
+    git clone https://github.com/emp-toolkit/X.git --branch Y
+    cd X
+fi
 cmake -S . -B build
 cmake --build build -j
 sudo cmake --install build
