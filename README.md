@@ -1,14 +1,17 @@
 # EMP Toolkit Readme Page
-<img src="https://raw.githubusercontent.com/emp-toolkit/emp-readme/master/art/logo-full.jpg" width=300px/>
+<img src="https://raw.githubusercontent.com/emp-toolkit/emp-readme/main/art/logo-full.jpg" width=300px/>
 
 ## Installation
 
-1. Go the the folder you want to install everything
+Requires CMake 3.21+ (Ubuntu 22.04+, recent macOS) and Python 3.
 
-2. `curl https://raw.githubusercontent.com/emp-toolkit/emp-readme/master/scripts/install.py -O`
+1. Go to the folder you want to install everything
 
-3. `python install.py --deps --tool --ot` to install code dependency, and master branch of emp-tool and emp-ot. More flags can be added including `--sh2pc`, `--ag2pc`, `--agmpc`, `--zk`.
-- You can also install a branch using `python install.py --[repo1]=[branch1] --[repo2]=[branch2]`, e.g., `python install.py --deps --tool=0.2.1 --ot=master`
+2. `curl https://raw.githubusercontent.com/emp-toolkit/emp-readme/main/scripts/install.py -O`
+
+3. `python3 install.py --deps --tool --ot` to install dependencies, plus the `main` branch of `emp-tool` and `emp-ot`. More flags can be added including `--sh2pc`, `--ag2pc`, `--agmpc`, `--zk`.
+- You can also install a specific branch using `python3 install.py --[repo1]=[branch1] --[repo2]=[branch2]`, e.g., `python3 install.py --deps --tool=v0.3.x --ot=v0.3.x`.
+- The default branch was renamed `master` → `main` for `emp-tool`, `emp-ot`, and `emp-sh2pc` as of v1.0; the previous line lives on `v0.3.x`. The remaining repos (`emp-zk`, `emp-ag2pc`, `emp-agmpc`) are still on `master`.
 
 
 ## Citation
