@@ -1,14 +1,16 @@
 # EMP Toolkit Readme Page
-<img src="https://raw.githubusercontent.com/emp-toolkit/emp-readme/master/art/logo-full.jpg" width=300px/>
+<img src="https://raw.githubusercontent.com/emp-toolkit/emp-readme/v0.3.x/art/logo-full.jpg" width=300px/>
 
 ## Installation
 
-1. Go the the folder you want to install everything
+Requires Ubuntu 22.04+ (or comparable) with CMake, a C++17 compiler, OpenSSL, and Python 3. Tested with cmake 3.22 / gcc 11 on Ubuntu 22.04.
 
-2. `curl https://raw.githubusercontent.com/emp-toolkit/emp-readme/master/scripts/install.py -O`
+1. Go to the folder you want to install everything
 
-3. `python install.py --deps --tool --ot` to install code dependency, and master branch of emp-tool and emp-ot. More flags can be added including `--sh2pc`, `--ag2pc`, `--agmpc`, `--zk`.
-- You can also install a branch using `python install.py --[repo1]=[branch1] --[repo2]=[branch2]`, e.g., `python install.py --deps --tool=0.2.1 --ot=master`
+2. `curl https://raw.githubusercontent.com/emp-toolkit/emp-readme/v0.3.x/scripts/install.py -O`
+
+3. `python3 install.py --deps --tool --ot` to install code dependencies plus the `v0.3.x` branch of emp-tool and emp-ot. More flags can be added including `--sh2pc`, `--ag2pc`, `--agmpc`, `--zk`. `--tool` / `--ot` / `--sh2pc` / `--ag2pc` / `--zk` default to `v0.3.x` on this branch; `--agmpc` defaults to `master` because emp-agmpc has no v0.3.x branch yet.
+- You can override the branch per repo, e.g. `python3 install.py --deps --tool=0.2.1 --ot=master`.
 
 
 ## Citation

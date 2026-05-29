@@ -1,4 +1,4 @@
-#!/usr/python
+#!/usr/bin/env python3
 import subprocess
 install_packages = '''
 if [ "$(uname)" == "Darwin" ]; then
@@ -31,12 +31,12 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('-install', '--install', action='store_true')
 parser.add_argument('-deps', '--deps', action='store_true')
-parser.add_argument('--tool', nargs='?', const='master')
-parser.add_argument('--ot', nargs='?', const='master')
-parser.add_argument('--sh2pc', nargs='?', const='master')
-parser.add_argument('--ag2pc', nargs='?', const='master')
-parser.add_argument('--agmpc', nargs='?', const='master')
-parser.add_argument('--zk', nargs='?', const='master')
+parser.add_argument('--tool', nargs='?', const='v0.3.x')
+parser.add_argument('--ot', nargs='?', const='v0.3.x')
+parser.add_argument('--sh2pc', nargs='?', const='v0.3.x')
+parser.add_argument('--ag2pc', nargs='?', const='v0.3.x')
+parser.add_argument('--agmpc', nargs='?', const='master')  # no v0.3.x branch upstream
+parser.add_argument('--zk', nargs='?', const='v0.3.x')
 args = parser.parse_args()
 
 if vars(args)['install'] or vars(args)['deps']:
